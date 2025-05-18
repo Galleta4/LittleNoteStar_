@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A5F0E4"
+    tools:context=".act3">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view"
+        android:layout_width="355dp"
+        android:layout_height="661dp"
+        android:background="@color/white"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/le2"
+                android:text="I N G R E S A   U N   A P O D O ⭐"
+                android:textColor="#12229d"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.427" />
+
+            <EditText
+                android:id="@+id/apodo"
+                android:layout_width="260dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:backgroundTint="#E9E9E9"
+                android:gravity="center"
+                android:hint="...."
+                android:padding="10dp"
+                android:textColorHint="#383434"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.519" />
+
+            <Button
+                android:id="@+id/btn_sig"
+                android:layout_width="147dp"
+                android:layout_height="49dp"
+                android:backgroundTint="@color/verde_agua"
+                android:fontFamily="sans-serif-black"
+                android:shadowColor="#524D4D"
+                android:text="@string/siguiente"
+                android:textColor="#0B0B0B"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.905"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.973"
+                app:rippleColor="#5D4040"
+                app:strokeColor="#665B5B" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="azulito">#006bb8 </color>
+    <color name="amarillo">#fff5b3</color>
+    <color name="naranja">#f6c794</color>
+    <color name="azul_verde">#4f959d</color>
+    <color name="verde_agua">#95d8bc</color>
+    <color name="gris">#e9e9e9</color>
+    <color name="verde_agua_2">#a5f0e4</color>
+    <color name="amarillo_letra">#ffd058</color>
+</resources>

@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "797524066008",
+    "firebase_url": "https://littlenotestar-88085-default-rtdb.firebaseio.com",
+    "project_id": "littlenotestar-88085",
+    "storage_bucket": "littlenotestar-88085.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797524066008:android:3ef230d856e19d49c0a1ad",
+        "android_client_info": {
+          "package_name": "com.example.littlenote_star"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWXRwQq69TVk1y6mezAvP0b3JdpJRtVWM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797524066008:android:db8712b797c10086c0a1ad",
+        "android_client_info": {
+          "package_name": "com.example.littlenotestar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWXRwQq69TVk1y6mezAvP0b3JdpJRtVWM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797524066008:android:e455e39a0a538fd7c0a1ad",
+        "android_client_info": {
+          "package_name": "com.example.littlenotestar_"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWXRwQq69TVk1y6mezAvP0b3JdpJRtVWM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

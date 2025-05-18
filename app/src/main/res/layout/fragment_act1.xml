@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".act1">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="368dp"
+        android:layout_height="657dp"
+        android:layout_margin="32dp"
+        app:cardBackgroundColor="@color/naranja"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+
+            <ImageView
+                android:id="@+id/lunita"
+                android:layout_width="354dp"
+                android:layout_height="155dp"
+                android:src="@drawable/luna"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.538"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/txtBienvenido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/le2"
+                android:gravity="center"
+                android:text="BIENVENID@"
+                android:textColor="@color/white"
+                android:textSize="42sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lunita" />
+
+            <TextView
+                android:id="@+id/txtBienvenido2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/le2"
+                android:gravity="center"
+                android:text="ENTRA A TU CUENTA"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtBienvenido" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardFormulario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardBackgroundColor="#FFE5C5"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtBienvenido2"
+                app:layout_constraintWidth_percent="0.9">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/txt_usuario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="Usuario:"
+                        android:textColor="@color/naranja"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/user"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="4dp"
+                        android:backgroundTint="#fbe4ca"
+                        android:drawablePadding="8dp"
+                        android:fontFamily="@font/le2"
+                        android:hint="Escribe tu usuario"
+                        android:inputType="text"
+                        android:padding="12dp"
+                        android:textColor="#0B0909"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_usuario" />
+
+                    <TextView
+                        android:id="@+id/txt_contraseña"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Contraseña:"
+                        android:textColor="@color/naranja"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/user" />
+
+                    <EditText
+                        android:id="@+id/pwd"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:backgroundTint="#fbe4ca"
+                        android:drawablePadding="8dp"
+                        android:fontFamily="@font/le2"
+                        android:hint="Ingresa tu contraseña"
+                        android:inputType="textPassword"
+                        android:padding="12dp"
+                        android:textColor="#100E0E"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_contraseña" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_Entrar"
+                android:layout_width="300dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="@color/amarillo"
+                android:fontFamily="@font/le2"
+                android:text="ENTRAR"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:cornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/cardFormulario"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/cardFormulario"
+                app:layout_constraintTop_toBottomOf="@+id/cardFormulario" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="261dp"
+                android:layout_height="112dp"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_Entrar">
+
+                <TextView
+                    android:id="@+id/txtBienvenido3"
+                    android:layout_width="198dp"
+                    android:layout_height="31dp"
+                    android:fontFamily="@font/le2"
+                    android:gravity="center"
+                    android:text="¿AÚN NO ESTÁS REGISTRADO?"
+                    android:textColor="@color/amarillo"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtBienvenido4"
+                    android:layout_width="74dp"
+                    android:layout_height="24dp"
+                    android:fontFamily="@font/le2"
+                    android:gravity="center"
+                    android:text="DA CLIC AQUÍ..."
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBienvenido3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_sig"
+                    android:layout_width="139dp"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@color/amarillo_letra"
+                    android:fontFamily="@font/le2"
+                    android:text="REGISTRARSE"
+                    android:textColor="@color/black"
+                    android:textSize="8sp"
+                    app:cornerRadius="14dp"
+                    app:iconGravity="end"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.495"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBienvenido4"
+                    app:layout_constraintVertical_bias="0.407" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
